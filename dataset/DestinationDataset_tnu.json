@@ -1,0 +1,28 @@
+{
+	"name": "DestinationDataset_tnu",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"compression": {
+				"type": "GZip",
+				"level": "Optimal"
+			},
+			"fileName": "",
+			"folderPath": "harsha"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
